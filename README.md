@@ -1,24 +1,14 @@
 # README
+https://stackoverflow.com/questions/45474191/an-error-occurred-while-installing-mysql2-0-4-8-and-bundler-cannot-continue
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Docker Compose
 
-Things you may want to cover:
+## Up
+```
+docker-compose up
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Down
+```
+docker-compose down
+```
