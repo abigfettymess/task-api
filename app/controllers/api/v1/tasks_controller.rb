@@ -18,7 +18,7 @@ class Api::V1::TasksController < ApplicationController
       @task.update(task_type: params[:task_type]) if params[:task_type]
       @task.update(description: params[:description]) if params[:description]
 
-      render json: { message: 'Success' }, status: 200
+      render json: @task, status: 200
     else
       render json: { error: 'Error' }, status: 400
     end
@@ -29,7 +29,7 @@ class Api::V1::TasksController < ApplicationController
     if !@task.save
       render json: { error: 'Unable to save' }, status: 400
     else
-      render json: { message: 'Success' }, status: 200
+      render json: @task, status: 200
     end
   end
 
