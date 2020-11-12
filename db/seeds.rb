@@ -6,4 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Task.create(name: 'Going to the movies', task_type: 'done', description: '')
+task_types = [
+    "to-do",
+    "doing",
+    "done"
+]
+
+task_types.each do |name|
+  TaskType.create(name: name)
+end
