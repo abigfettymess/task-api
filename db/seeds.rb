@@ -15,3 +15,5 @@ task_types = [
 task_types.each do |name|
   TaskType.create(name: name)
 end
+
+user = User.create(email: "huy@gmail.com", password: "password")
