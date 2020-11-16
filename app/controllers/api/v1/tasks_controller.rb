@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Api
   module V1
     class TasksController < ApplicationController
@@ -22,14 +24,15 @@ module Api
 
           render json: @task, status: 200
         else
-          render json: {error: 'Error'}, status: 400
+          render json: { error: 'Error' }, status: 400
         end
       end
 
       def create
         @task = Task.create(name: params[:name], task_type: params[:task_type], description: params[:description])
+        @task.user = @user
         if !@task.save
-          render json: {error: 'Unable to save'}, status: 400
+          render json: { error: 'Unable to save' }, status: 400
         else
           render json: @task, status: 200
         end
@@ -39,11 +42,10 @@ module Api
         @task = Task.find(params[:id])
         if @task
           @task.destroy
-          render json: {message: 'Success'}, status: 200
+          render json: { message: 'Success' }, status: 200
         else
-          render json: {message: 'Not success'}, status: 400
+          render json: { message: 'Not success' }, status: 400
         end
-
       end
 
       private
