@@ -7,8 +7,8 @@ class JsonWebToken
   end
 
   def self.decode(token)
-    JWT.decode(token, 'SECRET')[0]
-  rescue StandardError
-    'FAILED'
+    return JWT.decode(token, 'SECRET')[0]
+  rescue
+    return nil
   end
 end
