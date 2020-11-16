@@ -43,10 +43,12 @@ class UsersController < ApplicationController
 
   def login
     @user = User.find_by(email: params[:email])
+    puts @user
 
     if @user&.authenticate(params[:password])
-      token = encode_token({ user_id: @user.id })
-      render json: { token: token }
+      expires = Time.now.to_i + 30.minutes
+      token = JwtHelper.encode({ user_id: @user.id }, expires) # encode_token({ user_id: @user.id })
+      render json: { token: token, expires: expires }
     else
       render json: { error: 'Invalid username or password' }
     end
