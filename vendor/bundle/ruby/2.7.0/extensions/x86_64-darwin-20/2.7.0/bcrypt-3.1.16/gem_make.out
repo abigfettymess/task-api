@@ -1,5 +1,5 @@
 current directory: /Users/huyvanvo94/Developer/task-api/vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri
-/Users/huyvanvo94/.rvm/rubies/ruby-2.7.0/bin/ruby -I /Users/huyvanvo94/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20201116-32354-t5u30u.rb extconf.rb
+/Users/huyvanvo94/.rvm/rubies/ruby-2.7.0/bin/ruby -I /Users/huyvanvo94/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20201116-48457-l94ieu.rb extconf.rb
 creating Makefile
 
 current directory: /Users/huyvanvo94/Developer/task-api/vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri
@@ -36,4 +36,4 @@ linking shared-object bcrypt_ext.bundle
 
 current directory: /Users/huyvanvo94/Developer/task-api/vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri
 make "DESTDIR=" install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bcrypt_ext.bundle ./.gem.20201116-32354-11ofims
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bcrypt_ext.bundle ./.gem.20201116-48457-1gukgky

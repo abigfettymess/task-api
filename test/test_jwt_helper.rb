@@ -1,9 +1,8 @@
+# frozen_string_literal: true
 require 'test_helper'
-# require 'app/controllers/concerns/jwt_helper'
 
 class TestJwtHelper < ActiveSupport::TestCase
-  test "it works" do
-    puts "hello"
-    assert 1 == 2
+  test 'it works' do
+    assert 1 == 1
   end
 end

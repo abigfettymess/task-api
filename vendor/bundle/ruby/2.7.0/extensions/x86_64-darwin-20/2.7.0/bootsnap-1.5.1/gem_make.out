@@ -1,5 +1,5 @@
 current directory: /Users/huyvanvo94/Developer/task-api/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.5.1/ext/bootsnap
-/Users/huyvanvo94/.rvm/rubies/ruby-2.7.0/bin/ruby -I /Users/huyvanvo94/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20201116-32354-6zsf70.rb extconf.rb
+/Users/huyvanvo94/.rvm/rubies/ruby-2.7.0/bin/ruby -I /Users/huyvanvo94/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20201116-48457-1638sgs.rb extconf.rb
 creating Makefile
 
 current directory: /Users/huyvanvo94/Developer/task-api/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.5.1/ext/bootsnap
@@ -12,4 +12,4 @@ linking shared-object bootsnap/bootsnap.bundle
 
 current directory: /Users/huyvanvo94/Developer/task-api/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.5.1/ext/bootsnap
 make "DESTDIR=" install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20201116-32354-1ghmp2d/bootsnap
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20201116-48457-1dgumfm/bootsnap

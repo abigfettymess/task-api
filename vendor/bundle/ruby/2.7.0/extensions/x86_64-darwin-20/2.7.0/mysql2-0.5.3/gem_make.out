@@ -1,5 +1,5 @@
 current directory: /Users/huyvanvo94/Developer/task-api/vendor/bundle/ruby/2.7.0/gems/mysql2-0.5.3/ext/mysql2
-/Users/huyvanvo94/.rvm/rubies/ruby-2.7.0/bin/ruby -I /Users/huyvanvo94/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20201116-32354-1fr82zk.rb extconf.rb --with-ldflags\=-L/usr/local/opt/openssl/lib --with-cppflags\=-I/usr/local/opt/openssl/include
+/Users/huyvanvo94/.rvm/rubies/ruby-2.7.0/bin/ruby -I /Users/huyvanvo94/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20201116-48457-kqxgeu.rb extconf.rb --with-ldflags\=-L/usr/local/opt/openssl/lib --with-cppflags\=-I/usr/local/opt/openssl/include
 checking for rb_absint_size()... yes
 checking for rb_absint_singlebit_p()... yes
 checking for rb_wait_for_single_fd()... yes
@@ -54,4 +54,4 @@ linking shared-object mysql2/mysql2.bundle
 
 current directory: /Users/huyvanvo94/Developer/task-api/vendor/bundle/ruby/2.7.0/gems/mysql2-0.5.3/ext/mysql2
 make "DESTDIR=" install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 mysql2.bundle ./.gem.20201116-32354-967t6l/mysql2
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 mysql2.bundle ./.gem.20201116-48457-nzzeqr/mysql2
