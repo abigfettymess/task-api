@@ -13,7 +13,7 @@ class TestJwtHelper < ActiveSupport::TestCase
   end
 
   test 'it doe not work' do
-    token = JwtHelper.encode({ :test => 'test' }, -1000)
+    token = JwtHelper.encode({ :test => 'test' }, Time.now.to_i - 30.minutes)
     assert token != nil
     assert JwtHelper.decode(token) == nil
   end

@@ -20,3 +20,10 @@ docker-compose up
 ```
 docker-compose down
 ```
+
+Running Redis CLI in the container
+``` 
+docker exec -it <id> sh
+redis-cli
+
+```
