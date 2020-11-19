@@ -1,13 +1,16 @@
 # frozen_string_literal: true
 
+KEY = "tasks_controller"
 module Api
   module V1
     class TasksController < ApplicationController
       # before_action :find_task,
-
       def index
-        @tasks = Task.all
-        render json: @tasks
+        json = Rails.cache.fetch("tasksall#{Task.collection_cache_key}", expires_in:600) do
+          Task.all
+        end
+        render json: json
+
       end
 
       def show
