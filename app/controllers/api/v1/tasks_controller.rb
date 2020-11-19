@@ -14,8 +14,14 @@ module Api
       end
 
       def show
-        @task = Task.find(params[:id])
-        render json: @task
+        puts "show -----------"
+        puts @user.id
+
+        tasks = Rails.cache.fetch("specific#{Task.collection_cache_key}", expires_in: 600) do
+          Task.where("id = ? and user_id = ?", "#{params[:id]}", "#{@user.id}")
+        end
+
+        render json: { payload: tasks }
       end
 
       def update

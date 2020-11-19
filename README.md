@@ -27,3 +27,9 @@ docker exec -it <id> sh
 redis-cli
 
 ```
+
+### Redis
+
+```
+keys * 
+```
