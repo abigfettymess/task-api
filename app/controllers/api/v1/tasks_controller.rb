@@ -36,7 +36,7 @@ module Api
       end
 
       def create
-        @task = Task.create(name: params[:name], task_type: params[:task_type], description: params[:description])
+        @task = Task.new(task_params)
         @task.user = @user
         if !@task.save
           render json: { error: 'Unable to save' }, status: 400
@@ -61,13 +61,6 @@ module Api
         params.require(:task).permit(:name, :description, :task_type)
       end
 
-      def fact_params
-        params.require(:fact).permit(:fact, :likes, :user_id)
-      end
-
-      def find_task
-        @task = Task.find(params[:id])
-      end
     end
   end
 end
